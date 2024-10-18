@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/supersaiyan" />
+
+    <!-- Botón para reproducir el audio -->
+    <Button
+        android:id="@+id/btn_play_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir Audio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Botón para reproducir el video (debajo del botón de audio) -->
+    <Button
+        android:id="@+id/btn_play_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir Video"
+        android:layout_below="@id/btn_play_audio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- VideoView para mostrar el video (debajo del botón de video) -->
+    <VideoView
+        android:id="@+id/myVideoView"
+        android:layout_width="329dp"
+        android:layout_height="151dp"
+        android:layout_below="@id/btn_play_video"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+</RelativeLayout>
